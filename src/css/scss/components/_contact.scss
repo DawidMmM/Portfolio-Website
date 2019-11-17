@@ -1,0 +1,43 @@
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+
+	&__name {
+    	margin-bottom: 10px;
+    } 
+
+	&__details {
+		margin: 0 15px;
+
+		@media (max-width: 430px) {	   
+	        width: 77%;
+		}
+	}
+
+	&__name, &__details {
+		margin-bottom: 10px;
+	}
+
+	&__link {
+		color: $black;
+		display: inline-block;		
+
+		&::after {
+			content: '';
+			display: block;
+			width: 0px;
+			height: 2px;
+			background-color: black;
+			transition: .7s;
+		}
+
+		&:hover::after {
+			width: 100%;			
+		}
+	}
+
+	.icon {
+		display: block;
+	}    
+}

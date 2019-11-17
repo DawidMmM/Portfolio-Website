@@ -1,0 +1,35 @@
+.projects {
+	.column {
+		margin-top: 45px;
+		text-align: center;
+	}
+
+	&__img {
+		margin: 0 auto;
+		width: 210px;
+		height: 170px;
+		border: 2px solid black;
+	}
+
+	&__title {
+		min-width: 212px;
+	}
+
+	.icon_github {
+		margin-right: 22px;   	    
+	}	
+
+	.icon_live, .icon_github {
+		display: inline-block;	    
+		opacity: 1;
+		transition: opacity .3s;
+
+		@media (min-width: 600px) {
+	        opacity: .5;
+		}
+	}
+
+	.icon_live:hover, .icon_github:hover {
+		opacity: 1;
+	}	
+}
