@@ -1,4 +1,4 @@
-# portfolio-website
+# Portfolio Website
 
 Technologies and tools I've used with this project:
 
